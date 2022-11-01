@@ -200,7 +200,7 @@ function schoolProjectsDropdownbtnOne() {
   boolSchoolProjectsOne = !boolSchoolProjectsOne;
   document.getElementById("schoolProjectsDropdownOne").classList.toggle("schoolProjectsDropdownShowOne");
 
-  if (boolSchoolProjects) {
+  if (boolSchoolProjectsOne) {
     document.getElementById("schoolProjectsDropdownbtnOne").value = "\u21D3 Webshop";
     document.getElementById("schoolProjectsDropdownbtnOne").style.borderBottomRightRadius = "10px";
     document.getElementById("schoolProjectsDropdownbtnOne").style.borderBottomLeftRadius = "10px";

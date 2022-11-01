@@ -65,6 +65,7 @@ a {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+  z-index: 6;
 }
 
 /* sidebar btns */
