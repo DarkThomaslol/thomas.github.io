@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>School projects</title>
+
+    <!-- scripts -->
+    <script src="../js/script.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+</head>
+
+<body id="body" class="body" onload="startSchoolProjectPage()">
+
+    <!-- sidebar with all the buttons -->
+    <div id="mySidebar" class="sidebar">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <input id="homebtn" class="allbtns" type="button" value="Home" onclick="location.href='../index.html'" />
+        <input id="aboutbtn" class="allbtns" type="button" value="About me"
+            onclick="location.href='../pages/aboutpage.html'" />
+        <input id="projectsbtn" class="allbtns" type="button" value="Projects"
+            onclick="location.href='../pages/projectspage.html'" />
+        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projects"
+            onclick="location.href='../pages/schoolprojectspage.html'" />
+        <input id="contactbtn" class="allbtns" type="button" value="Contact me"
+            onclick="location.href='../pages/contactPage.html'" />
+    </div>
+
+    <div id="main">
+        <!-- title and name -->
+        <div>
+            <h1 class="titleOther titleTitleProjects">School projects</h1>
+            <p class="titleTextProjects">projects school forced me to do</p>
+        </div>
+
+        <!-- menu/sidebar and contact me buttons in a header -->
+        <header class="headerMenu">
+            <input class="menubtn" type="button" value="&#9776; Menu" onclick="navChanger()" />
+            <div class="dropdownlng">
+                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Language"
+                    onclick="lngDropdownbtn()" />
+                <div id="lngDropdown" class="lngDropdown-content">
+                    <button id="nlbtn" class="lngDropdown-contentbtns" onclick="nlFunctionlng()"><img
+                            src="../img/language/Flag_of_the_Netherlands.png" alt="nlFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> Dutch</button>
+                    <button id="enbtn" class="lngDropdown-contentbtns" onclick="enFunctionlng()"><img
+                            src="../img/language/Flag_of_the_United_Kingdom.svg.png" alt="enFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> English</button>
+                </div>
+            </div>
+            <input class="contactMebtn" type="button" value="&#9993; Contact me" onclick="arrowClick" />
+        </header>
+
+        <div>
+            <div class="dropdownProjects">
+                <input id="schoolProjectsDropdownbtn" class="projectsbtn" type="button"
+                    value="&#8659; Bootstrap website" onclick="schoolProjectsDropdownbtn()" />
+                <div id="schoolProjectsDropdown" class="projectsDropdown-content">
+                    <div class="divProjects">
+                        <div id="textOneProjects" class="divTextProjects">
+                            <h1 class="textProjects titleProjects">
+                                Bootstrap website
+                            </h1>
+                            <p class="textProjects">
+                                for this website we weren't really allowed to use any css or js becuase it was all about
+                                learning bootstrap. so next to that the first page needed to be a copy of a company
+                                website where i chose to copy apple. the second and third page needed to be some other
+                                silly stuff in the style of the first page so the teacher could see how this period of
+                                lessons improved our skills in bootstrap.
+                            </p>
+                            <p class="textProjects">
+                                (side note: i was really bad at using bootstrap)
+                            </p>
+                            <p class="textProjects">
+                                Program used: visual studio code
+                                <br>
+                                Language used: html, css
+                                </br>
+                                Plugin used: Bootstrap
+                            </p>
+                        </div>
+                        <div class="imgDivProjects">
+                            <img class="imgMultiProjects" src="../img/schoolprojects/Screenshot 2022-11-01 154752.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdownProjects">
+                <input id="schoolProjectsDropdownbtnOne" class="projectsbtn" type="button"
+                    value="&#8659; Webshop" onclick="schoolProjectsDropdownbtnOne()" />
+                <div id="schoolProjectsDropdownOne" class="projectsDropdown-content">
+                    <div class="divProjects">
+                        <div id="textOneProjects" class="divTextProjects">
+                            <h1 class="textProjects titleProjects">
+                                Bootstrap website
+                            </h1>
+                            <p class="textProjects">
+                                for this website we weren't really allowed to use any css or js becuase it was all about
+                                learning bootstrap. so next to that the first page needed to be a copy of a company
+                                website where i chose to copy apple. the second and third page needed to be some other
+                                silly stuff in the style of the first page so the teacher could see how this period of
+                                lessons improved our skills in bootstrap.
+                            </p>
+                            <p class="textProjects">
+                                (side note: i was really bad at using bootstrap)
+                            </p>
+                            <p class="textProjects">
+                                Program used: visual studio code
+                                <br>
+                                Language used: html, css
+                                </br>
+                                Plugin used: Bootstrap
+                            </p>
+                        </div>
+                        <div class="imgDivProjects">
+                            <img class="imgMultiProjects" src="../img/schoolprojects/Screenshot 2022-11-01 154752.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

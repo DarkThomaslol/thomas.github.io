@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Thomas Marselje</title>
+
+    <!-- scripts -->
+    <script src="js/script.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="stylesheet/style.css" />
+</head>
+
+<body id="body" class="body" onload="startHomePage()">
+
+    <!-- sidebar with all the buttons -->
+    <div id="mySidebar" class="sidebar">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <input id="homebtn" class="allbtns" type="button" value="Home" onclick="location.href='index.html'" />
+        <input id="aboutbtn" class="allbtns" type="button" value="About me"
+            onclick="location.href='pages/aboutpage.html'" />
+        <input id="projectsbtn" class="allbtns" type="button" value="Projects"
+            onclick="location.href='pages/projectspage.html'" />
+        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projects"
+            onclick="location.href='pages/schoolprojectspage.html'" />
+        <input id="contactbtn" class="allbtns" type="button" value="Contact me"
+            onclick="location.href='pages/contactPage.html'" />
+    </div>
+
+    <div id="main">
+        <!-- title and name -->
+        <div>
+            <h1 id="homeTitle" class="title">Portfolio</h1>
+            <h2 class="titleName">Thomas Marselje</h2>
+            <!-- Home made column -->
+            <div class="arrowDiv">
+                <!-- space div -->
+                <div></div>
+                <!-- arrow that jumps to the 3 buttons below -->
+                <a id="jumpHomebtns" href="#homebtnsid" onclick="setInterval(removeHrefLink, 3000)">
+                    <div id="arrowbtn" class="arrowbtn" onmouseover="animArrowPlay()" onmouseout="animArrowStop()">
+                        &darr;
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- menu/sidebar and contact me buttons in a header -->
+        <header class="headerMenu">
+            <input class="menubtn" type="button" value="&#9776; Menu" onclick="navChanger()" />
+            <div class="dropdownlng">
+                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Language"
+                    onclick="lngDropdownbtn()" />
+                <div id="lngDropdown" class="lngDropdown-content">
+                    <button id="nlbtn" class="lngDropdown-contentbtns" onclick="nlFunctionlng()"><img
+                            src="img/language/Flag_of_the_Netherlands.png" alt="nlFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> Dutch</button>
+                    <button id="enbtn" class="lngDropdown-contentbtns" onclick="enFunctionlng()"><img
+                            src="img/language/Flag_of_the_United_Kingdom.svg.png" alt="enFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> English</button>
+                </div>
+            </div>
+            <input class="contactMebtn" type="button" value="&#9993; Contact me" onclick="arrowClick" />
+        </header>
+
+        <!-- Home made column again -->
+        <div id="homebtnsid" class="homebtns">
+            <!-- about me page button with picture-->
+
+            <a href="pages/aboutpage.html" onclick="" class="allHomehref">
+                <div id="allbtnHomeOne" class="allHomebtn">
+                    <img id="allbtnHomeOneimg" class="allHomeimg" src="img/templates/037cc42ed0694622328a9715aca8ca25.jpg">
+                    <p class="allHomeTitletext">About me</p>
+                    <p class="allHometext">
+                        My hobbies, studies, work, skills and what i like to learn/do
+                    </p>
+                </div>
+            </a>
+
+
+            <!-- projects page button with picture-->
+
+            <a href="pages/projectspage.html" onclick="" class="allHomehref">
+                <div id="allbtnHomeTwo" class="allHomebtn">
+                    <img id="allbtnHomeTwoimg" class="allHomeimg" src="img/templates/HQ_Blog_TheUltimateProjectmanager_Header.png">
+                    <p class="allHomeTitletext">Projects</p>
+                    <p class="allHometext">Projects i made in my free time</p>
+                </div>
+            </a>
+
+
+            <!-- school projects page button with picture-->
+
+            <a href="pages/schoolprojectspage.html" onclick="" class="allHomehref">
+                <div id="allbtnHomeThree" class="allHomebtn">
+                    <img id="allbtnHomeThreeimg" class="allHomeimg" src="img/templates/samenwerking.jpg">
+                    <p class="allHomeTitletext">School Projects</p>
+                    <p class="allHometext">Projects/assignements that school forced me to do</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

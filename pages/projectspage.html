@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+
+    <!-- scripts -->
+    <script src="../js/script.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+</head>
+
+<body id="body" class="body" onload="startProjectPage()">
+
+    <!-- sidebar with all the buttons -->
+    <div id="mySidebar" class="sidebar">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <input id="homebtn" class="allbtns" type="button" value="Home" onclick="location.href='../index.html'" />
+        <input id="aboutbtn" class="allbtns" type="button" value="About me"
+            onclick="location.href='../pages/aboutpage.html'" />
+        <input id="projectsbtn" class="allbtns" type="button" value="Projects"
+            onclick="location.href='../pages/projectspage.html'" />
+        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projects"
+            onclick="location.href='../pages/schoolprojectspage.html'" />
+        <input id="contactbtn" class="allbtns" type="button" value="Contact me"
+            onclick="location.href='../pages/contactPage.html'" />
+    </div>
+
+    <div id="main">
+        <!-- title and name -->
+        <div>
+            <h1 class="titleOther titleTitleProjects">Projects</h1>
+            <p class="titleTextProjects">that i made in my free time</p>
+        </div>
+
+        <!-- menu/sidebar and contact me buttons in a header -->
+        <header class="headerMenu">
+            <input class="menubtn" type="button" value="&#9776; Menu" onclick="navChanger()" />
+            <div class="dropdownlng">
+                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Language"
+                    onclick="lngDropdownbtn()" />
+                <div id="lngDropdown" class="lngDropdown-content">
+                    <button id="nlbtn" class="lngDropdown-contentbtns" onclick="nlFunctionlng()"><img
+                            src="../img/language/Flag_of_the_Netherlands.png" alt="nlFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> Dutch</button>
+                    <button id="enbtn" class="lngDropdown-contentbtns" onclick="enFunctionlng()"><img
+                            src="../img/language/Flag_of_the_United_Kingdom.svg.png" alt="enFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> English</button>
+                </div>
+            </div>
+            <input class="contactMebtn" type="button" value="&#9993; Contact me" onclick="arrowClick" />
+        </header>
+
+        <div>
+
+
+            <div class="dropdownProjects">
+                <input id="projectsDropdownbtnOne" class="projectsbtn" type="button" value="&#8659; The Java webgame"
+                    onclick="projectsDropdownbtnOne()" />
+                <div id="projectsDropdownOne" class="projectsDropdown-content">
+                    <div class="divProjects">
+                        <div id="textOneProjects" class="divTextProjects">
+                            <h1 class="textProjects titleProjects enTextProjects">
+                                The Java webgame
+                            </h1>
+                            <p class="textProjects enTextProjects">
+                                The webgame is a project that was based on a tutorial that i was recommended by youtube.
+                                At the time i knew nothing of javascript, but i really thought it would be cool to have
+                                a
+                                webgame that i could play with friends. So i followed that tutorial and since he grabbed
+                                some assets online, i was like:"Hey
+                                wouldn't it be cool if i also made the art for my game". But because the art took way to
+                                long to make i was getting a bit bored and stopped with it and never finished it sadly.
+                                I did get the player to move with WASD but thats it really.
+                            </p>
+                            <p class="textProjects enTextProjects">
+                                Program used: visual studio code
+                                <br>
+                                Language used: html, js
+                                </br>
+                            </p>
+
+                            <h1 class="textProjects titleProjects nlTextProjects">
+                                De Java webgame
+                            </h1>
+                            <p class="textProjects nlTextProjects">
+                                blalbvlalsld
+                            </p>
+                            <p class="textProjects nlTextProjects">
+                                Gebruikte programma: visual studio code
+                                <br>
+                                Gebruikte taal: html, js
+                                </br>
+                            </p>
+                        </div>
+                        <div class="imgDivProjects">
+                            <img class="imgMultiProjects" src="../img/projects/javaWebgame/pixelMap.png" alt="art tiles">
+                            <img class="imgMultiProjects" src="../img/projects/javaWebgame/player.png" alt="player">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdownProjects">
+                <input id="projectsDropdownbtn" class="projectsbtn" type="button"
+                    value="&#8659; The Appformat experiment" onclick="projectsDropdownbtn()" />
+                <div id="projectsDropdown" class="projectsDropdown-content">
+                    <div class="divProjects">
+                        <div class="divTextProjects">
+                            <h1 class="textProjects titleProjects">
+                                The Appformat experiment
+                            </h1>
+                            <p class="textProjects">
+                                The appformat is some project I made so I could learn the basics for windows forms (an
+                                option in visual studio). While making this i learned a few things like how to make a
+                                button or how to use the tools given by the format itself. This is also the first
+                                project i made after some lessons at school thinking that this would improve my skills
+                                in C#. But i learned that this was something entirely different then what i've been
+                                learning, so after making a simple prototype i quickly stopped, since it wouldn't help
+                                me
+                                with the school lessons.
+                            </p>
+                            <p class="textProjects">
+                                Program used: visual studio
+                                <br>
+                                Language used: C#
+                                </br>
+                            </p>
+                        </div>
+                        <img class="imgProjects" src="../img/projects/appformat/appformat.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

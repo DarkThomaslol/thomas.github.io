@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+
+    <!-- scripts -->
+    <script src="../js/script.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+</head>
+
+<body id="body" class="body" onload="startAboutPage()">
+
+    <!-- sidebar with all the buttons -->
+    <div id="mySidebar" class="sidebar">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <input id="homebtn" class="allbtns" type="button" value="Home" onclick="location.href='../index.html'" />
+        <input id="aboutbtn" class="allbtns" type="button" value="About me"
+            onclick="location.href='../pages/aboutpage.html'" />
+        <input id="projectsbtn" class="allbtns" type="button" value="Projects"
+            onclick="location.href='../pages/projectspage.html'" />
+        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projects"
+            onclick="location.href='../pages/schoolprojectspage.html'" />
+        <input id="contactbtn" class="allbtns" type="button" value="Contact me"
+            onclick="location.href='../pages/contactPage.html'" />
+    </div>
+
+    <div id="main">
+        <!-- title and name -->
+        <div>
+            <h1 class="titleOther">About me</h1>
+        </div>
+
+        <!-- menu/sidebar and contact me buttons in a header -->
+        <header class="headerMenu">
+            <input class="menubtn" type="button" value="&#9776; Menu" onclick="navChanger()" />
+            <div class="dropdownlng">
+                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Language"
+                    onclick="lngDropdownbtn()" />
+                <div id="lngDropdown" class="lngDropdown-content">
+                    <button id="nlbtn" class="lngDropdown-contentbtns" onclick="nlFunctionlng()"><img
+                            src="../img/language/Flag_of_the_Netherlands.png" alt="nlFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> Dutch</button>
+                    <button id="enbtn" class="lngDropdown-contentbtns" onclick="enFunctionlng()"><img
+                            src="../img/language/Flag_of_the_United_Kingdom.svg.png" alt="enFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> English</button>
+                </div>
+            </div>
+            <input class="contactMebtn" type="button" value="&#9993; Contact me" onclick="arrowClick" />
+        </header>
+
+        <div class="divAbout">
+            <div class="divTextAbout">
+                <h1 class="textAbout titleAbout">
+                    Summary about me
+                </h1>
+                <div class="textAbout">
+                    <p>
+                        When I was young, I always liked to play games, and till this day I still do, but I also like to
+                        make them in some way or form, and that evolved into me trying to discover ways to make my own
+                        programs and websites.
+                    </p>
+                    <p>
+                        Of course, school helped me a lot with learning to code and how to use the programs to make
+                        games,
+                        programs, and websites, but it all comes down to your own work on it, so in my free time outside
+                        of
+                        school I do like to code a lot and experiment with making stuff. It may not even work, but I
+                        always
+                        learn something I could use later on.
+                    </p>
+                    <p>
+                        The skills I learned at my school are:
+                        <br>
+                        - Working with Visual Studio (code)
+                        <br>
+                        - Working with Unity
+                        <br>
+                        - How to use C#, HTML, JS, and CSS
+                    </p>
+                </div>
+            </div>
+            <img class="imgAbout" src="../img/templates/Bongo-Cat-png-3.png" alt="img">
+        </div>
+    </div>
+
+</body>
+
+</html>
