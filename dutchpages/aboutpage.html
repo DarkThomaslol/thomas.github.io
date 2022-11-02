@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="../stylesheet/style.css" />
 </head>
 
-<body id="body" class="body" onload="startAboutPage()">
+<body id="body" class="body" onload="startAboutPagenl()">
 
     <!-- sidebar with all the buttons -->
     <div id="mySidebar" class="sidebar">
         <a class="closebtn" onclick="closeNav()">&times;</a>
-        <input id="homebtn" class="allbtns" type="button" value="Home" onclick="location.href='dutchindex.html'" />
+        <input id="homebtn" class="allbtns" type="button" value="Start" onclick="location.href='dutchindex.html'" />
         <input id="aboutbtn" class="allbtns" type="button" value="Over mij" onclick="location.href='aboutpage.html'" />
-        <input id="projectsbtn" class="allbtns" type="button" value="Projects"
+        <input id="projectsbtn" class="allbtns" type="button" value="Projecten"
             onclick="location.href='projectspage.html'" />
-        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projects"
+        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projecten"
             onclick="location.href='schoolprojectspage.html'" />
         <input id="contactbtn" class="allbtns" type="button" value="Stuur bericht"
             onclick="location.href='contactpage.html'" />
@@ -29,26 +29,27 @@
     <div id="main">
         <!-- title and name -->
         <div>
-            <h1 class="titleOther">About me</h1>
+            <h1 class="titleOther">Over mij</h1>
         </div>
 
         <!-- menu/sidebar and contact me buttons in a header -->
         <header class="headerMenu">
             <input class="menubtn" type="button" value="&#9776; Menu" onclick="navChanger()" />
             <div class="dropdownlng">
-                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Language"
+                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Taal"
                     onclick="lngDropdownbtn()" />
                 <div id="lngDropdown" class="lngDropdown-content">
-                    <button id="nlbtn" class="lngDropdown-contentbtns" onclick="nlFunctionlng()"><img
+                    <button id="nlbtn" class="lngDropdown-contentbtns" onclick="location.href='aboutpage.html'"><img
                             src="../img/language/Flag_of_the_Netherlands.png" alt="nlFlag" width="25px"
-                            style="float: left; margin-top: 5px;"> Dutch</button>
-                    <button id="enbtn" class="lngDropdown-contentbtns" onclick="enFunctionlng()"><img
+                            style="float: left; margin-top: 5px;"> Nederland</button>
+                    <button id="enbtn" class="lngDropdown-contentbtns"
+                        onclick="location.href='../pages/aboutpage.html'"><img
                             src="../img/language/Flag_of_the_United_Kingdom.svg.png" alt="enFlag" width="25px"
-                            style="float: left; margin-top: 5px;"> English</button>
+                            style="float: left; margin-top: 5px;"> Engels</button>
                 </div>
             </div>
-            <input class="contactMebtn" type="button" value="&#9993; Contact me"
-                onclick="location.href='../pages/contactpage.html'" />
+            <input class="contactMebtn" type="button" value="&#9993; Stuur bericht"
+                onclick="location.href='contactpage.html'" />
         </header>
 
         <div class="divAbout">
@@ -58,14 +59,27 @@
                 </h1>
                 <div class="textAbout">
                     <p>
-                        Who am i?
+                        Toen ik jong was, vond ik het altijd leuk om games te spelen, en tot op de dag van vandaag doe
+                        ik dat nog steeds, maar ik vind het ook leuk om ze op de een of andere manier te maken, en dat
+                        evolueerde naar het zoeken naar manieren om mijn eigen programma's en websites te maken.
                         <br>
-                        
-                    </p>
-                    <p>
+                        <br>
 
-                    </p>
-                    <p>
+                        Natuurlijk heeft school me veel geholpen bij het leren coderen en hoe je de programma's kunt
+                        gebruiken om games, programma's en websites te maken, maar het komt allemaal neer op je eigen
+                        werk, dus in mijn vrije tijd buiten school vind ik het leuk om veel te coderen en experimenteren
+                        met het maken van dingen. Het werkt misschien niet eens, maar ik leer altijd iets dat ik later
+                        kan gebruiken.
+                        <br>
+                        <br>
+
+                        De vaardigheden die ik op mijn school heb geleerd zijn:
+                        <br>
+                        - Werken met Visual Studio (code)
+                        <br>
+                        - Werken met Unity
+                        <br>
+                        - Geleerde Talen: C#, HTML, JS en CSS
 
                     </p>
                 </div>

@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="../stylesheet/style.css" />
 </head>
 
-<body id="body" class="body" onload="startContactPage()">
+<body id="body" class="body" onload="startContactPagenl()">
 
     <!-- sidebar with all the buttons -->
     <div id="mySidebar" class="sidebar">
         <a class="closebtn" onclick="closeNav()">&times;</a>
-        <input id="homebtn" class="allbtns" type="button" value="Home" onclick="location.href='dutchindex.html'" />
+        <input id="homebtn" class="allbtns" type="button" value="Start" onclick="location.href='dutchindex.html'" />
         <input id="aboutbtn" class="allbtns" type="button" value="Over mij" onclick="location.href='aboutpage.html'" />
-        <input id="projectsbtn" class="allbtns" type="button" value="Projects"
+        <input id="projectsbtn" class="allbtns" type="button" value="Projecten"
             onclick="location.href='projectspage.html'" />
-        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projects"
+        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projecten"
             onclick="location.href='schoolprojectspage.html'" />
         <input id="contactbtn" class="allbtns" type="button" value="Stuur bericht"
             onclick="location.href='contactpage.html'" />
@@ -29,25 +29,25 @@
     <div id="main">
         <!-- title and name -->
         <div>
-            <h1 class="titleOther">Contact me</h1>
+            <h1 class="titleOther">Stuur mij een bericht</h1>
         </div>
 
         <!-- menu/sidebar and contact me buttons in a header -->
         <header class="headerMenu">
             <input class="menubtn" type="button" value="&#9776; Menu" onclick="navChanger()" />
             <div class="dropdownlng">
-                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Language"
+                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Taal"
                     onclick="lngDropdownbtn()" />
                 <div id="lngDropdown" class="lngDropdown-content">
                     <button id="nlbtn" class="lngDropdown-contentbtns" onclick="nlFunctionlng()"><img
                             src="../img/language/Flag_of_the_Netherlands.png" alt="nlFlag" width="25px"
-                            style="float: left; margin-top: 5px;"> Dutch</button>
+                            style="float: left; margin-top: 5px;"> Nederland</button>
                     <button id="enbtn" class="lngDropdown-contentbtns" onclick="enFunctionlng()"><img
                             src="../img/language/Flag_of_the_United_Kingdom.svg.png" alt="enFlag" width="25px"
-                            style="float: left; margin-top: 5px;"> English</button>
+                            style="float: left; margin-top: 5px;"> Engels</button>
                 </div>
             </div>
-            <input class="contactMebtn" type="button" value="&#9993; Contact me" onclick="location.href='../pages/contactpage.html'" />
+            <input class="contactMebtn" type="button" value="&#9993; Stuur bericht" onclick="location.href='contactpage.html'" />
         </header>
 
         <div>

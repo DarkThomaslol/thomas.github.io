@@ -32,6 +32,39 @@ function startContactPage() {
   document.getElementById("contactbtn").value = "\u2192 Contact Me";
 }
 
+// nl startpage
+function startHomePagenl() {
+  document.getElementById("homebtn").value = "\u2192 Start";
+}
+
+function startAboutPagenl() {
+  document.getElementById("aboutbtn").value = "\u2192 Over mij";
+}
+
+function startProjectPagenl() {
+  document.getElementById("projectsbtn").value = "\u2192 Projecten";
+
+  document.getElementById("projectsDropdownbtn").style.borderBottomRightRadius = "10px";
+  document.getElementById("projectsDropdownbtn").style.borderBottomLeftRadius = "10px";
+
+  document.getElementById("projectsDropdownbtnOne").style.borderBottomRightRadius = "10px";
+  document.getElementById("projectsDropdownbtnOne").style.borderBottomLeftRadius = "10px";
+}
+
+function startSchoolProjectPagenl() {
+  document.getElementById("schoolProjectsbtn").value = "\u2192 School Projecten";
+
+  document.getElementById("schoolProjectsDropdownbtn").style.borderBottomRightRadius = "10px";
+  document.getElementById("schoolProjectsDropdownbtn").style.borderBottomLeftRadius = "10px";
+
+  document.getElementById("schoolProjectsDropdownbtnOne").style.borderBottomRightRadius = "10px";
+  document.getElementById("schoolProjectsDropdownbtnOne").style.borderBottomLeftRadius = "10px";
+}
+
+function startContactPagenl() {
+  document.getElementById("contactbtn").value = "\u2192 Stuur bericht";
+}
+
 // bool to make the menu button also close the sidebar
 let boolnav = true;
 
