@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects nl</title>
+
+    <!-- scripts -->
+    <script src="../js/script.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+</head>
+
+<body id="body" class="body" onload="startProjectPage()">
+
+    <!-- sidebar with all the buttons -->
+    <div id="mySidebar" class="sidebar">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <input id="homebtn" class="allbtns" type="button" value="Start" onclick="location.href='dutchindex.html'" />
+        <input id="aboutbtn" class="allbtns" type="button" value="Over mij" onclick="location.href='aboutpage.html'" />
+        <input id="projectsbtn" class="allbtns" type="button" value="Projecten"
+            onclick="location.href='projectspage.html'" />
+        <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projecten"
+            onclick="location.href='schoolprojectspage.html'" />
+        <input id="contactbtn" class="allbtns" type="button" value="Stuur bericht"
+            onclick="location.href='contactpage.html'" />
+    </div>
+
+    <div id="main">
+        <!-- title and name -->
+        <div>
+            <h1 class="titleOther titleTitleProjects">Projecten</h1>
+            <p class="titleTextProjects">die ik in mijn vrije tijd heb gemaakt</p>
+        </div>
+
+        <!-- menu/sidebar and contact me buttons in a header -->
+        <header class="headerMenu">
+            <input class="menubtn" type="button" value="&#9776; Menu" onclick="navChanger()" />
+            <div class="dropdownlng">
+                <input id="lngDropdownbtn" class="languagebtn" type="button" value="&#9872; Taal"
+                    onclick="lngDropdownbtn()" />
+                <div id="lngDropdown" class="lngDropdown-content">
+                    <button id="nlbtn" class="lngDropdown-contentbtns" onclick="location.href='projectspage.html'"><img
+                            src="../img/language/Flag_of_the_Netherlands.png" alt="nlFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> Nederland</button>
+                    <button id="enbtn" class="lngDropdown-contentbtns"
+                        onclick="location.href='../pages/projectspage.html'"><img
+                            src="../img/language/Flag_of_the_United_Kingdom.svg.png" alt="enFlag" width="25px"
+                            style="float: left; margin-top: 5px;"> Englels</button>
+                </div>
+            </div>
+            <input class="contactMebtn" type="button" value="&#9993; Stuur bericht"
+                onclick="location.href='contactpage.html'" />
+        </header>
+
+        <div>
+
+
+            <div class="dropdownProjects">
+                <input id="projectsDropdownbtnOne" class="projectsbtn" type="button" value="&#8659; The Java webgame"
+                    onclick="projectsDropdownbtnOne()" />
+                <div id="projectsDropdownOne" class="projectsDropdown-content">
+                    <div class="divProjects">
+                        <div id="textOneProjects" class="divTextProjects">
+                            <h1 class="textProjects titleProjects">
+                                De Java webgame
+                            </h1>
+                            <p class="textProjects">
+                                De webgame is een project dat was gebaseerd op een tutorial die mij werd aanbevolen door
+                                youtube.
+                                Destijds wist ik niets van javascript, maar ik dacht dat het cool zou zijn om een
+                                webgame te hebben
+                                die ik met vrienden kan spelen. Dus ik volgde die tutorial en sinds hij wat art online
+                                pakte, had ik zoiets van: "Hey
+                                zou het niet cool zijn als ik ook de art voor mijn spel zou maken". Maar omdat de art
+                                plaats te lang duurde om te maken, begon ik me een beetje te vervelen en stopte ermee en
+                                maakte het helaas nooit af.
+                                Ik heb de speler wel laten bewegen met WASD, maar dat is het.
+                            </p>
+                            <p class="textProjects">
+                                Programma's gebruikt: visual studio code
+                                <br>
+                                Taal gebruikt: html, js
+                                </br>
+                            </p>
+                        </div>
+                        <div class="imgDivProjects">
+                            <img class="imgMultiProjects" src="../img/projects/javaWebgame/pixelMap.png"
+                                alt="art tiles">
+                            <img class="imgMultiProjects" src="../img/projects/javaWebgame/player.png" alt="player">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdownProjects">
+                <input id="projectsDropdownbtn" class="projectsbtn" type="button"
+                    value="&#8659; The Appformat experiment" onclick="projectsDropdownbtn()" />
+                <div id="projectsDropdown" class="projectsDropdown-content">
+                    <div class="divProjects">
+                        <div class="divTextProjects">
+                            <h1 class="textProjects titleProjects">
+                                De Appformat experiment
+                            </h1>
+                            <p class="textProjects">
+                                De appformat is een project dat ik heb gemaakt, zodat ik de basis voor Windows-forms kon
+                                leren (een
+                                optie in visual studio). Tijdens het maken van dit heb ik een paar dingen geleerd, zoals
+                                het maken van een
+                                knop of hoe je de tools gebruikt die door het format zelf worden gegeven. Dit is ook de
+                                eerste
+                                project dat ik heb gemaakt na wat lessen op school, ik dacht dat dit mijn vaardigheden
+                                zou verbeteren
+                                in C#. Maar ik leerde dat dit iets heel anders was dan wat ik leerde op school, dus na
+                                het maken van een eenvoudig prototype stopte ik snel, omdat het niet zou helpen
+                                met de school lessen.
+                            </p>
+                            <p class="textProjects">
+                                Programma's gebruikt: visual studio
+                                <br>
+                                Taal gebruikt: C#
+                                </br>
+                            </p>
+                        </div>
+                        <img class="imgProjects" src="../img/projects/appformat/appformat.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

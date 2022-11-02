@@ -1,35 +1,7 @@
-// language options
-function nlFunctionlng() {
-  document.getElementById("nlbtn").style.backgroundColor = "rgb(107, 111, 143)";
-  document.getElementById("enbtn").style.backgroundColor = "rgb(14, 18, 48)";
-
-  var nlBool = true;
-  sessionStorage.setItem("nlBool", nlBool);
-}
-
-function enFunctionlng() {
-  document.getElementById("enbtn").style.backgroundColor = "rgb(107, 111, 143)";
-  document.getElementById("nlbtn").style.backgroundColor = "rgb(14, 18, 48)";
-
-  var nlBool = false;
-  sessionStorage.setItem("nlBool", nlBool);
-}
 
 // makes it clear in the sidebar that you start at which page
 function startHomePage() {
   document.getElementById("homebtn").value = "\u2192 Home";
-
-  // var nlBoollng = sessionStorage.getItem("nlBool");
-  // console.log(nlBoollng);
-
-  // if (nlBoollng) {
-  //   document.getElementById("nlbtn").style.backgroundColor = "rgb(107, 111, 143)";
-  //   document.getElementById("enbtn").style.backgroundColor = "rgb(14, 18, 48)";
-  // }
-  // else {
-  //   document.getElementById("enbtn").style.backgroundColor = "rgb(107, 111, 143)";
-  //   document.getElementById("nlbtn").style.backgroundColor = "rgb(14, 18, 48)";
-  // }
 }
 
 function startAboutPage() {
@@ -91,13 +63,11 @@ function closeNav() {
 // Makes the arrow bigger and another color
 const animArrowPlay = () => {
   document.getElementById("arrowbtn").style.color = "rgb(107, 111, 143)";
-  document.getElementById("arrowbtn").style.fontSize = "200px";
 }
 
 // Puts the arrow back to normal
 const animArrowStop = () => {
   document.getElementById("arrowbtn").style.color = "rgb(14, 18, 48)";
-  document.getElementById("arrowbtn").style.fontSize = "150px";
 }
 
 function removeHrefLink() {

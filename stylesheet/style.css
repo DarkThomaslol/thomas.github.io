@@ -468,14 +468,6 @@ a {
   display: block;
 }
 
-.nlTextProjects{
-  display: none;
-}
-
-.enTextProjects{
-  display: block;
-}
-
 /* school projects stuff */
 .schoolProjectsDropdownShow {
   display: block;

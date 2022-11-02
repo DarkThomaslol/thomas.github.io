@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About me</title>
+    <title>Contact nl</title>
 
     <!-- scripts -->
     <script src="../js/script.js"></script>
@@ -11,26 +11,25 @@
     <link rel="stylesheet" href="../stylesheet/style.css" />
 </head>
 
-<body id="body" class="body" onload="startAboutPage()">
+<body id="body" class="body" onload="startContactPage()">
 
     <!-- sidebar with all the buttons -->
     <div id="mySidebar" class="sidebar">
         <a class="closebtn" onclick="closeNav()">&times;</a>
-        <input id="homebtn" class="allbtns" type="button" value="Home" onclick="location.href='../index.html'" />
-        <input id="aboutbtn" class="allbtns" type="button" value="About me"
-            onclick="location.href='../pages/aboutpage.html'" />
+        <input id="homebtn" class="allbtns" type="button" value="Home" onclick="location.href='dutchindex.html'" />
+        <input id="aboutbtn" class="allbtns" type="button" value="Over mij" onclick="location.href='aboutpage.html'" />
         <input id="projectsbtn" class="allbtns" type="button" value="Projects"
-            onclick="location.href='../pages/projectspage.html'" />
+            onclick="location.href='projectspage.html'" />
         <input id="schoolProjectsbtn" class="allbtns" type="button" value="School Projects"
-            onclick="location.href='../pages/schoolprojectspage.html'" />
-        <input id="contactbtn" class="allbtns" type="button" value="Contact me"
-            onclick="location.href='../pages/contactpage.html'" />
+            onclick="location.href='schoolprojectspage.html'" />
+        <input id="contactbtn" class="allbtns" type="button" value="Stuur bericht"
+            onclick="location.href='contactpage.html'" />
     </div>
 
     <div id="main">
         <!-- title and name -->
         <div>
-            <h1 class="titleOther">About me</h1>
+            <h1 class="titleOther">Contact me</h1>
         </div>
 
         <!-- menu/sidebar and contact me buttons in a header -->
@@ -48,30 +47,13 @@
                             style="float: left; margin-top: 5px;"> English</button>
                 </div>
             </div>
-            <input class="contactMebtn" type="button" value="&#9993; Contact me"
-                onclick="location.href='../pages/contactpage.html'" />
+            <input class="contactMebtn" type="button" value="&#9993; Contact me" onclick="location.href='../pages/contactpage.html'" />
         </header>
 
-        <div class="divAbout">
-            <div class="divTextAbout">
-                <h1 class="textAbout titleAbout">
-                    Thomas Marselje
-                </h1>
-                <div class="textAbout">
-                    <p>
-                        Who am i?
-                        <br>
-                        
-                    </p>
-                    <p>
-
-                    </p>
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-            <img class="imgAbout" src="../img/templates/Bongo-Cat-png-3.png" alt="img">
+        <div>
+            <p class="titleName">
+                e-mail: t.marselje@sintlucasedu.nl
+            </p>
         </div>
     </div>
 
